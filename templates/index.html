@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Logs</title>
+</head>
+<body>
+    {% for event, figure in figures.items() %}
+        <h2>{{ event }}</h2>
+        {{ figure | safe }}
+    {% endfor %}
+</body>
+</html>
